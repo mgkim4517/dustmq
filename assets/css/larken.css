@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Larken";
+  src: local("Larken Black"), url(../fonts/fonnts.com-Larken_Black.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 900;
+  font-size: swap;
+}

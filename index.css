@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/***** main *****/
+main .slide-wrapper {
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+main .slide-wrapper .slide-box ul {
+  display: flex;
+  width: 1750px;
+}
+
+main .slide-wrapper .slide-box ul li img {
+  height: 250px;
+}
+
+
+/* ***** PC ver. ***** */
+@media screen and (min-width: 769px) {
+  /***** main *****/
+  main .slide-wrapper {
+    padding-top: 150px;
+  }
+
+  main .slide-wrapper .slide-box ul {
+    width: 3500px;
+  }
+
+  main .slide-wrapper .slide-box ul li img {
+    height: 500px;
+  }
+}

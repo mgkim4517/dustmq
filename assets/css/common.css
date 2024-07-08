@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+/* GeneralSans, serif */
+@import url(./GeneralSans.css);
+
+/* Larken, sans-serif */
+@import url(./larken.css);
+
+/***** 변수 *****/
+:root {
+  /* fonts */
+  --main-font: "GeneralSans", Georgia, 'Times New Roman', Times, serif;
+  --sub-font: "Larken", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  /* mobile font size */
+  --mobile-size-xl: 80px;
+  --mobile-size-lg: 24px;
+  --mobile-size-md: 14px;
+  --mobile-size-sm: 11px;
+
+  /* color */
+  --bg-color: #E5E1D7;
+  --font-color: #2E2A25;
+
+  --screen: 768px;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: var(--main-font);
+  color: var(--font-color);
+  box-sizing: border-box;
+}
+
+/***** header *****/
+header nav {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+header nav a {
+  padding-top: 43px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+header nav a:hover {
+  color: #ad7a57;
+}
+
+header h1 {
+  overflow: hidden;
+  padding-top: 57px;
+  text-align: center;
+}
+
+header h1 img {
+  width: 98%;
+}
+
+header h3 {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 15px;
+  text-align: center;
+}
+
+/***** footer *****/
+footer .moving-text {
+  width: 100%;
+  height: 45px;
+  overflow: hidden;
+  background-color: var(--font-color);
+  margin-top: 80px;
+}
+
+footer .moving-text p {
+  font-size: 24px;
+  font-weight: 500;
+  white-space: nowrap;
+  color: var(--bg-color);
+  line-height: 45px;
+}
+
+footer h1 {
+  overflow: hidden;
+  text-align: center;
+  padding-top: 40px;
+}
+
+footer h1 img {
+  width: 98%;
+}
+
+footer .copyright {
+  padding: 10px 13px 19px 0;
+  text-align: right;
+  font-size: 11px;
+  font-weight: 300;
+}
+
+/* ***** PC ver. ***** */
+@media screen and (min-width: 769px) {
+
+  /***** header *****/
+  header nav {
+    gap: 150px;
+  }
+
+  header nav a {
+    padding-top: 75px;
+    font-size: 16px;
+  }
+
+  header h1 {
+    padding-top: 110px;
+  }
+
+  header h3 {
+    font-size: 20px;
+    padding-top: 80px;
+  }
+
+  /***** footer *****/
+  footer .moving-text {
+    margin-top: 230px;
+    height: 150px;
+  }
+
+  footer .moving-text p {
+    font-size: 80px;
+    line-height: 150px;
+  }
+
+  footer h1 {
+    padding-top: 150px;
+  }
+
+  footer .copyright {
+    padding: 100px 18px 22px 0;
+    font-size: 14px;
+  }
+}
