@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+main .slide-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+main .slide-wrapper .slide-box {
+  display: flex;
+  width: 700%;
+  padding-top: 40px;
+}
+
+main .slide-wrapper .slide-box li {
+  width: 80vw;
+  height: 80vw;
+  margin: 0 auto;
+}
+
+main .slide-wrapper .slide-box li img {
+  overflow: hidden;
+  width: 100%;
+}
+
+main .slide-wrapper .date-box {
+  position: absolute;
+  z-index: 999;
+  bottom: 0;
+}
+
+/* main .slide-wrapper .date-box li {
+  display: none;
+}
+
+main .slide-wrapper .date-box li.on {
+  display: block;
+  font-size: 130px;
+  font-weight: 900;
+  text-align: center;
+} */
+
+/* ***** PC ver. ***** */
+@media screen and (min-width: 769px) {
+  main .slide-wrapper .slide-box {
+    padding-top: 100px;
+  }
+  
+  main .slide-wrapper .slide-box li {
+    width: 40vw;
+    height: 40vw;
+  }
+}
