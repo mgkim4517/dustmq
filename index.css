@@ -2,6 +2,7 @@
 
 /***** main *****/
 main .slide-wrapper {
+  display: flex;
   overflow: hidden;
   padding-top: 60px;
 }
@@ -11,8 +12,51 @@ main .slide-wrapper .slide-box ul {
   width: 1750px;
 }
 
+main .slide-wrapper .slide-box ul .slide-img {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
 main .slide-wrapper .slide-box ul li img {
   height: 250px;
+}
+
+
+.slide-box.original {
+  animation: rollingleft1 90s linear infinite;
+}
+
+.slide-box.clone {
+  animation: rollingleft2 90s linear infinite;
+}
+
+@keyframes rollingleft1 {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-100%);
+  }
+
+  50.01% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rollingleft2 {
+  0% {
+    transition: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
 }
 
 

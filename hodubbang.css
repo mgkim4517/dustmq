@@ -28,16 +28,6 @@ main .slide-wrapper .date-box {
   bottom: 0;
 }
 
-/* main .slide-wrapper .date-box li {
-  display: none;
-}
-
-main .slide-wrapper .date-box li.on {
-  display: block;
-  font-size: 130px;
-  font-weight: 900;
-  text-align: center;
-} */
 
 /* ***** PC ver. ***** */
 @media screen and (min-width: 769px) {

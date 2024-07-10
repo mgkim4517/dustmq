@@ -67,7 +67,7 @@ header h3 {
 }
 
 /***** footer *****/
-footer .moving-text {
+footer .move-text-container {
   width: 100%;
   height: 45px;
   overflow: hidden;
@@ -75,12 +75,18 @@ footer .moving-text {
   margin-top: 80px;
 }
 
-footer .moving-text p {
+footer .move-text-container .move-text-box {
+  display: flex;
+}
+
+footer  .move-text-container .move-text-box .move-text {
   font-size: 24px;
   font-weight: 500;
   white-space: nowrap;
   color: var(--bg-color);
   line-height: 45px;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 footer h1 {
@@ -123,12 +129,17 @@ footer .copyright {
   }
 
   /***** footer *****/
-  footer .moving-text {
+  footer .move-text-container {
     margin-top: 230px;
+    width: 100%;
     height: 150px;
+
   }
 
-  footer .moving-text p {
+  footer .move-text-container .move-text-box {
+  }
+  
+  footer .move-text-container .move-text-box .move-text {
     font-size: 80px;
     line-height: 150px;
   }
