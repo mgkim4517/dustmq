@@ -22,7 +22,13 @@
   --bg-color: #E5E1D7;
   --font-color: #2E2A25;
 
-  --screen: 768px;
+  /* swiper pagination */
+  --swiper-theme-color: #ffffff;
+
+  /* scrollbar */
+  ::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
 body {

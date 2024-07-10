@@ -1,42 +1,48 @@
 @charset "utf-8";
 
-main .slide-wrapper {
+main .img-swiper .img-container {
   overflow: hidden;
   position: relative;
 }
 
-main .slide-wrapper .slide-box {
+main .img-swiper .img-container .swiper-wrapper {
   display: flex;
+  justify-content: center;
   width: 700%;
   padding-top: 40px;
 }
 
-main .slide-wrapper .slide-box li {
-  width: 80vw;
-  height: 80vw;
-  margin: 0 auto;
+main .img-swiper .img-container .swiper-wrapper li {
+  flex: 0 0 auto; /* 슬라이드들이 줄어들지 않도록 설정 */
+  width: 80vw; /* 각 슬라이드의 너비 설정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-main .slide-wrapper .slide-box li img {
-  overflow: hidden;
-  width: 100%;
+main .img-swiper .img-container .swiper-wrapper li img {
+  width: 80%;
+  height: 80%;
 }
 
-main .slide-wrapper .date-box {
+main .img-swiper .img-container .swiper-paggination {
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
   position: absolute;
-  z-index: 999;
-  bottom: 0;
+  z-index: 9;
 }
-
 
 /* ***** PC ver. ***** */
 @media screen and (min-width: 769px) {
-  main .slide-wrapper .slide-box {
+  main .img-swiper .img-container .swiper-wrapper {
     padding-top: 100px;
   }
   
-  main .slide-wrapper .slide-box li {
-    width: 40vw;
-    height: 40vw;
+  main .img-swiper .img-container .swiper-wrapper li img {
+    width: 43%;
+    height: 43%;
   }
 }
